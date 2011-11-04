@@ -102,8 +102,8 @@ module Phony
       app.move opts
     end
 
-    def open(opts={}) #[]
-      app.open opts
+    def open_path(path, opts={}) #[]
+      app.open path, opts
     end
 
     def open_location(opts={}) #["window"]
@@ -114,7 +114,7 @@ module Phony
       app.print opts
     end
 
-    def quit(opts={}) #["saving"]
+    def quit_app(opts={}) #["saving"]
       app.quit opts
     end
 
