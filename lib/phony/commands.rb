@@ -102,7 +102,7 @@ module Phony
       app.move opts
     end
 
-    def open_path(path, opts={}) #[]
+    def open_workflow(path, opts={}) #[]
       app.open path, opts
     end
 
@@ -131,7 +131,7 @@ module Phony
     end
 
     def run_workflow(opts={}) #["with_variables"]
-      app.run_workflow opts
+      app.run_workflow app.document, opts
     end
 
     def save(opts={}) #["in"]
@@ -183,7 +183,7 @@ module Phony
     end
 
     def wait_until_done(opts={}) #["with_timeout"]
-      app.wait_until_done opts
+      app.wait_until_done app.document, opts
     end
 
     def zoom_in(opts={}) #[]
