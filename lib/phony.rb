@@ -6,6 +6,7 @@ module Phony
   extend self
 
   autoload :Dsl, 'phony/dsl'
+  autoload :Commands, 'phony/commands'
 
   def app
     Appscript.app('Fake')

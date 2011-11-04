@@ -23,5 +23,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "guard-bundler"
   s.add_development_dependency "factory_girl"
   s.add_development_dependency "ruby-debug19"
+  s.add_development_dependency "looksee"
   s.add_runtime_dependency "rb-appscript"
 end

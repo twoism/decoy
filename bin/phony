@@ -7,7 +7,7 @@ require 'irb'
 
 
 
-include Phony
+include Phony::Dsl
 
 IRB.setup(nil)
 irb = IRB::Irb.new

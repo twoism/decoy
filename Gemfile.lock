@@ -23,6 +23,7 @@ GEM
       guard (>= 0.8.4)
     linecache19 (0.5.12)
       ruby_core_source (>= 0.1.4)
+    looksee (1.0.3)
     multi_json (1.0.3)
     rb-appscript (0.6.1)
     rspec (2.7.0)
@@ -52,6 +53,7 @@ DEPENDENCIES
   factory_girl
   guard-bundler
   guard-rspec
+  looksee
   phony!
   rspec
   ruby-debug19

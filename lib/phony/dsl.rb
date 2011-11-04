@@ -1,12 +1,21 @@
 module Phony
   module Dsl
 
-    def app
-      @app ||= Phony.app
+    def self.included base
+      base.class_eval do
+        include Commands
+        include InstanceMethods
+      end
     end
 
-    def load_url url
-      app.load_URL url
+    module InstanceMethods
+      def workflow &block
+        yield
+      end
+
+      def running?
+        app.running?
+      end
     end
 
   end
