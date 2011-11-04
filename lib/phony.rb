@@ -1,5 +1,14 @@
+require "bundler/setup"
+require 'appscript'
 require "phony/version"
 
 module Phony
-  # Your code goes here...
+  extend self
+
+  autoload :Dsl, 'phony/dsl'
+
+  def app
+    Appscript.app('Fake')
+  end
+
 end
