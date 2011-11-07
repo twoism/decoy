@@ -1,6 +1,9 @@
 #DSL
 
 ```ruby
+
+include Phony::Dsl
+
 workflow do
   load_url 'http://google.com'
   set_value_of_element :with_name => 'q', :to => 'kittens'
