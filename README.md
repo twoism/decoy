@@ -1,3 +1,15 @@
+#DSL
+
+```ruby
+workflow do
+  load_url 'http://google.com'
+  set_value_of_element :with_name => 'q', :to => 'kittens'
+  click_element :with_name => 'btnG'
+  assert :HTTP_status_code_equals => 200
+  quit_app
+end
+```
+
 #API
 
 ## activate
