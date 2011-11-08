@@ -1,4 +1,18 @@
-#DSL
+# Phony
+
+Ruby DSL for scripting FakeApp. [http://fakeapp.com/](http://fakeapp.com/)
+
+## Installation
+
+    gem install phony
+    
+## Dependencies
+
+
+  * rb-appscript
+
+
+##DSL
 
 ```ruby
 
@@ -13,7 +27,7 @@ workflow do
 end
 ```
 
-#API
+##API
 
 **activate**
 
