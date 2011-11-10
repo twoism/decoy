@@ -10,8 +10,6 @@ module Decoy
 
     def assert(opts={}) #["HTTP_status_code_equals", "HTTP_status_code_is_not_equal", "JavaScript_evaluates_true", "XPath_evaluates_true", "does_not_have_JavaScript_dialog_with_text", "has_JavaScript_dialog_with_text", "in", "page_contains_text", "page_does_not_contain_text", "page_does_not_have_element_for_XPath", "page_does_not_have_element_with_id", "page_does_not_have_element_with_name", "page_has_element_for_XPath", "page_has_element_with_id", "page_has_element_with_name", "page_title_equals", "page_title_is_not_equal"]
       app.assert opts
-    rescue Appscript::CommandError => e
-      p e.message.split("\n\n").last
     end
 
     def capture_web_page(opts={}) #["as", "in", "saving_in"]
@@ -27,7 +25,7 @@ module Decoy
     end
 
     def close(opts={}) #["saving", "saving_in"]
-      app.close opts
+      app.close app.document, opts
     end
 
     def count(opts={}) #[]
@@ -39,7 +37,7 @@ module Decoy
     end
 
     def dismiss_javascript_dialog(opts={}) #["in", "with_button"]
-      app.dismiss_JavaScript_dialog opts
+      app.dismiss_JavaScript_dialog app.document, opts
     end
 
     def dispatch_keyboard_event(opts={}) #["charCode", "command_key_pressed", "control_key_pressed", "in", "keyCode", "option_key_pressed", "shift_key_pressed", "to_element_for_CSS_selector", "to_element_for_JavaScript", "to_element_for_XPath", "to_element_with_id", "to_element_with_name", "with_type"]
@@ -51,7 +49,7 @@ module Decoy
     end
 
     def do_javascript(opts={}) #["in"]
-      app.do_JavaScript opts
+      app.do_JavaScript app.document, opts
     end
 
     def duplicate(opts={}) #["to", "with_properties"]
@@ -135,7 +133,7 @@ module Decoy
     end
 
     def save(opts={}) #["in"]
-      app.save opts
+      app.save app.document, opts
     end
 
     def send_email_with(opts={}) #["body", "from", "password", "port", "smtp_server", "subject", "to", "username"]
@@ -171,7 +169,7 @@ module Decoy
     end
 
     def stop_workflow(opts={}) #[]
-      app.stop_workflow opts
+      app.stop_workflow app.document, opts
     end
 
     def submit_form(opts={}) #["for_CSS_selector", "for_JavaScript", "for_XPath", "in", "with_id", "with_name"]
