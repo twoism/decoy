@@ -2,12 +2,12 @@
 
 $:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 
-require 'phony'
+require 'decoy'
 require 'irb'
 
 
 
-include Phony::Dsl
+include Decoy::Dsl::Commands
 
 IRB.setup(nil)
 irb = IRB::Irb.new

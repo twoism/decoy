@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    phony (0.0.1)
+    decoy (0.0.1)
       rb-appscript
 
 GEM
@@ -50,10 +50,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  decoy!
   factory_girl
   guard-bundler
   guard-rspec
   looksee
-  phony!
   rspec
   ruby-debug19

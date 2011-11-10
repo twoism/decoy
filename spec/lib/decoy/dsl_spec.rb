@@ -1,8 +1,8 @@
 require 'helper'
 
-describe Phony::Commands do
+describe Decoy::Commands do
 
-  let(:dsl) { Class.new{ include Phony::Commands }.new }
+  let(:dsl) { Class.new{ include Decoy::Commands }.new }
   
   describe "#load_url" do
     before { dsl.app.should_receive(:load_URL).with('http://kittens.com') }

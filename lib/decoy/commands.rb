@@ -1,7 +1,7 @@
-module Phony
+module Decoy
   module Commands
     def app
-      @app ||= Phony.app
+      @app ||= Decoy.app
     end
 
     def activate(opts={}) #[]

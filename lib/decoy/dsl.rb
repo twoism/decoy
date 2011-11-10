@@ -1,4 +1,4 @@
-module Phony
+module Decoy
   module Dsl
 
     def self.included base

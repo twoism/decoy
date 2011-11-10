@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "phony/version"
+require "decoy/version"
 
 Gem::Specification.new do |s|
-  s.name        = "phony"
-  s.version     = Phony::VERSION
+  s.name        = "decoy"
+  s.version     = Decoy::VERSION
   s.authors     = ["twoism"]
   s.email       = ["signalstatic@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Ruby DSL for FakeApp}
   s.description = %q{Simple Ruby DSL for controlling FakeApp}
 
-  s.rubyforge_project = "phony"
+  s.rubyforge_project = "decoy"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
