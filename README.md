@@ -1,10 +1,10 @@
-# Phony
+# Decoy
 
 Ruby DSL for scripting FakeApp. [http://fakeapp.com/](http://fakeapp.com/)
 
 ## Installation
 
-    gem install phony
+    gem install decoy
     
 ## Dependencies
 
@@ -16,7 +16,7 @@ Ruby DSL for scripting FakeApp. [http://fakeapp.com/](http://fakeapp.com/)
 
 ```ruby
 
-include Phony::Dsl
+include Decoy::Dsl
 
 workflow do
   load_url 'http://google.com'
