@@ -1,4 +1,7 @@
 module Decoy
+  # Commands and Args were pulled from the Fake AppleScript Dictionary using
+  # app.commands.each {|c| p c; p app.parameters(c); puts }
+
   module Commands
     def app
       @app ||= Decoy.app
