@@ -5,9 +5,7 @@ $:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 require 'decoy'
 require 'irb'
 
-
-
-include Decoy::Dsl::Commands
+include Decoy::Commands
 
 IRB.setup(nil)
 irb = IRB::Irb.new

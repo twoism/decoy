@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    decoy (0.0.1)
+    decoy (0.0.2)
       rb-appscript
 
 GEM
