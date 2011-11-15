@@ -11,6 +11,11 @@ Ruby DSL for scripting FakeApp. [http://fakeapp.com/](http://fakeapp.com/)
 
   * rb-appscript
 
+##Usage
+
+```ruby
+Decoy.app.load_url 'http://google.com'
+```
 
 ##DSL
 
